@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import keras.backend as K
-#keras_contrib deprecated
-#from keras_contrib.utils import save_load_utils
+from keras_contrib.utils import save_load_utils
 from keras.models import model_from_json
 from keras.models import Model as KerasModel
 from keras.layers import Masking, GRU, Input, Bidirectional
-#from keras_contrib.layers import CRF
-from tensorflow_addons.layers import CRF
+from keras_contrib.layers import CRF
 from sklearn.preprocessing import LabelEncoder
 import os.path
 from pkg_resources import resource_filename
@@ -132,10 +130,10 @@ class ModelBuilder:
 			model = model_from_json(json_model)
 		# model.summary()
 		# print(model.get_weights()[0])
-		#try:
-		#	save_load_utils.load_all_weights(model, os.path.abspath(path + '.hdf5'))
-		#except KeyError:
-		model.load_weights(os.path.abspath(path + '.hdf5'))
+		try:
+			save_load_utils.load_all_weights(model, os.path.abspath(path + '.hdf5'))
+		except KeyError:
+			model.load_weights(os.path.abspath(path + '.hdf5'))
 		# print(model.get_weights()[0])
 		return model
 
