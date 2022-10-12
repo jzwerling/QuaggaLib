@@ -1,6 +1,8 @@
 # Notes:
 to run this in 2022, need to update the quaggalib setup.py, to fix the references to dateparser and levenshtein, and remove the reference to keras_contrib (see the setup.py in this repo)
-to install keras_contrib, clone the repo and run that setup.py  locally as well.
+
+to install keras_contrib, clone the repo and run that setup.py  locally as well, as explained here:
+https://ai.plainenglish.io/how-to-install-keras-contrib-7b75334ab742
 
 
 # Quagga [![Build Status](https://travis-ci.com/HPI-Information-Systems/QuaggaLib.svg?branch=master)](https://travis-ci.com/HPI-Information-Systems/QuaggaLib)
