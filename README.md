@@ -1,3 +1,7 @@
+# Notes:
+to run this in 2022, need to update the quaggalib setup.py, to fix the references to dateparser and levenshtein, and remove the reference to keras_contrib (see the setup.py in this repo)
+to install keras_contrib, clone the repo and run that setup.py  locally as well.
+
 
 # Quagga [![Build Status](https://travis-ci.com/HPI-Information-Systems/QuaggaLib.svg?branch=master)](https://travis-ci.com/HPI-Information-Systems/QuaggaLib)
 QuaggaLib was developed to provide an easy-to-use library for the model we describe in our ECIR paper (see below). 
