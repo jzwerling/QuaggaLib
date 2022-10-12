@@ -21,5 +21,5 @@ setup(
 	                  'pandas==0.23.3', 'protobuf==3.6.0', 'pyparsing==2.2.0', 'python-dateutil==2.7.3', 'pytz==2018.5', 'levenshtein',
 	                  'PyYAML==3.13', 'scikit-learn==0.19.2', 'scipy==1.1.0', 'six==1.11.0',
 	                  'sklearn==0.0', 'tensorflow==1.5.1', 'termcolor==1.1.0',
-	                  'Werkzeug==0.14.1','tensorflow_addons==2.13.3'],
+	                  'Werkzeug==0.14.1'],
 )
