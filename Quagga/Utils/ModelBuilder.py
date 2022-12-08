@@ -130,9 +130,11 @@ class ModelBuilder:
 			model = model_from_json(json_model)
 		# model.summary()
 		# print(model.get_weights()[0])
+		ap = os.path.abspath(path + '.hdf5')
 		try:
 			save_load_utils.load_all_weights(model, os.path.abspath(path + '.hdf5'))
-		except KeyError:
+		except:
+			print("could not open {}".format(ap))
 			model.load_weights(os.path.abspath(path + '.hdf5'))
 		# print(model.get_weights()[0])
 		return model
